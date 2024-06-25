@@ -10,10 +10,9 @@ function App() {
           alt="NEW Image" 
         />
         <a
-          className="App-link"
+          className="YOU-TUBE-WEB-link"
           href="https://www.youtube.com/"
           target="_blank"
-          rel="noopener noreferrer"
         >
           OPEN YOUTUBE
         </a>
