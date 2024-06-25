@@ -1,21 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <h1>king of kings</h1>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg" 
+          alt="NEW Image" 
+        />
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.youtube.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          OPEN YOUTUBE
         </a>
       </header>
     </div>
