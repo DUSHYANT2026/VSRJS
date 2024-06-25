@@ -1,14 +1,13 @@
 import './App.css';
 
-function App() {
+function Appss() {
   return (
-    <div className="App">
+    <div className="ccc">
       <h1>king of kings</h1>
       <header className="App-header">
         <img 
           src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg" 
-          alt="NEW Image" 
-        />
+          alt="NEW Image" />
         <a
           className="YOU-TUBE-WEB-link"
           href="https://www.youtube.com/"
@@ -21,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Appss;

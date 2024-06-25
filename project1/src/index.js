@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Appss from './App';
+import Temp from './X';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('newroot'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+<>
+<Appss />
+<Temp/>
+</>
 );
 
 
