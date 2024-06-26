@@ -16,7 +16,7 @@ function App() {
   }
 
    function subvalue(){  
-    if(counter > 1)      // avoid negative                                //  CLASSIC FUNCTION
+    if(counter >= 1)      // avoid negative                                //  CLASSIC FUNCTION
     setCount(counter - 1)
     console.log("VALUE SUB", counter)
   }
