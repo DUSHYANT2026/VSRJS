@@ -1,14 +1,14 @@
 import React from "react";
 import {Link, NavLink} from 'react-router-dom';
 
-export default function Header() {
+export default function Head() {
     return (
         <header className="shadow sticky z-50 top-0">
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d14dfe3e-533b-4d2e-9082-fa755502cd9d/df5kfu7-db015523-0747-4858-a1f8-748f33b6712e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QxNGRmZTNlLTUzM2ItNGQyZS05MDgyLWZhNzU1NTAyY2Q5ZFwvZGY1a2Z1Ny1kYjAxNTUyMy0wNzQ3LTQ4NTgtYTFmOC03NDhmMzNiNjcxMmUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.sBfKFGeN8BNJa8VAknOw6bjU00DPy255bEQ2ARHP8UI"
                             className="mr-3 h-12"
                             alt="Logo"
                         />
