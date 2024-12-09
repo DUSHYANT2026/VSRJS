@@ -7,8 +7,9 @@ export default function About() {
               <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                   <div className="md:5/12 lg:w-5/12">
                       <img
-                          src= "https://miro.medium.com/v2/resize:fit:1400/1*8P8zjSGRyKrVewWVr05aXQ.png"
+                          src= {'./aac2.jpg'}
                           alt="ALL ABOUT CODING"
+                          className='rounded-2xl'
                       />
                   </div>
                   <div className="md:7/12 lg:w-6/12">
