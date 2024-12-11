@@ -6,7 +6,6 @@ export default function Footer() {
         <footer className="bg-white border-y">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
-
                     <div className="mb-6 md:mb-0">
                         {/* <Link to="/" className="flex items-center">
                             <img
