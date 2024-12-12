@@ -5,7 +5,7 @@ function Leetcode() {
     const data = useLoaderData();
   
     return (
-      <div className='text-center m-4 bg-gray-600 text-white p-4 text-3xl'>
+      <div className='text-center m-4 bg-blue-300 text-white p-4 text-3xl'>
         Leetcode Total Question Solved: {/* Display total questions solved */}
         <a href="https://leetcode.com/Dushyant2026/" className="hover:underline"> 
           <img src={data.avatar_url} alt="Leetcode Profile" width={300} />
