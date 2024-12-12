@@ -64,9 +64,6 @@ export default function Header() {
                                 </NavLink>
 
                             </li>
-                            
-                        
-                            
 
                             <li>
                                 <NavLink
@@ -79,6 +76,7 @@ export default function Header() {
                                 </NavLink>
 
                             </li>
+                            
 
                         </ul>
                     </div>

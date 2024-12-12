@@ -88,7 +88,7 @@ export default function Home() {
 <NavLink to="/Tree">
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
-        Tree(Binart Tree, Binary Search Tree And AVL)
+        Tree(Binary Tree, Binary Search Tree And AVL)
     </span>
 </div>
 </NavLink>
@@ -106,7 +106,7 @@ export default function Home() {
 <NavLink to="/Bitm">
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
-        Bit Manipulation
+        Bit Manipulation And Maths
     </span>
 </div>
 </NavLink>
