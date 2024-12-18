@@ -2,7 +2,7 @@ import React from 'react'
 
 function Recursion() {
   return (
-    <div>
+    <div className="mx-auto w-full max-w-7xl">
 
 <div className="sm:flex sm:items-center sm:justify-between">
     <span className=" text-gray-900 sm:text-center font-bold hover:text-orange-500 hidden sm:block text-3xl hover:underline transition duration-500">
