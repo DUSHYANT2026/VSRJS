@@ -20,6 +20,7 @@ function Arrays() {
 </div>
 
 
+
 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-400 text-white font-bold  hover:bg-orange-400 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
