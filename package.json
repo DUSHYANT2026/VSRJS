@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "react-syntax-highlighter": "file:dist/cjs/react-syntax-highlighter/styles/prism"
-  }
-}
