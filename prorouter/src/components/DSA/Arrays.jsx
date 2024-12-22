@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom';
 
 function Arrays() {
   return (
@@ -13,11 +14,13 @@ function Arrays() {
 
 
 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+<NavLink to="/Narray1">
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-400 text-white font-bold  hover:bg-orange-400 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
         Array Notes with Basic and Easy Questions 
     </span>
 </div>
+</NavLink>
 
 
 

@@ -19,6 +19,7 @@ import STL from './components/DSA/STL.jsx'
 import Stack from './components/DSA/Stack.jsx'
 import Linkedlist from './components/DSA/Linkedlist.jsx'
 import Recursion from './components/DSA/Recursion.jsx'
+import Narray1 from './components/Innerdsa/arraydsa/Narray1.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,11 +39,8 @@ const router = createBrowserRouter(
       <Route path='Recusion' element={<Recursion />} />
       <Route path='user/:userid' element={<User />} />
       <Route loader={githubInfoLoader} path='Leetcode' element={<Leetcode />} />
-      <Route 
-      loader={githubInfoLoader}
-      path='github' 
-      element={<Github />}
-       /> 
+      <Route loader={githubInfoLoader} path='github' element={<Github />} /> 
+      <Route path='Narray1' element={<Narray1 />} />
     </Route>     
   )
 )
