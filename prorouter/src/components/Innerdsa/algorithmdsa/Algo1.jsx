@@ -2,7 +2,7 @@ import React from "react";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-function Narray1() {
+function algo1() {
   const codeExamples = [
     {
       title: "Binary Search",
@@ -89,4 +89,4 @@ function factorial(n) {
   );
 }
 
-export default Narray1;
+export default algo1;
