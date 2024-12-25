@@ -4,6 +4,7 @@ import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layouts from './Layouts.jsx'
 import Home from './components/Home/Home.jsx'
+import Home2 from './components/Home2/Home2.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
@@ -20,7 +21,7 @@ import Narray5 from './components/Innerdsa/arraydsa/Narray5.jsx'
 import Narray6 from './components/Innerdsa/arraydsa/Narray6.jsx'
 
 import Algorithm from './components/DSA/Algorithm.jsx'
-import Algo1 from './components/Innerdsa/algorithmdsa/algo1.jsx'
+import Algo1 from './components/Innerdsa/algorithmdsa/Algo1.jsx'
 import Algo2 from './components/Innerdsa/algorithmdsa/algo2.jsx'
 import Algo3 from './components/Innerdsa/algorithmdsa/algo3.jsx'
 import Algo4 from './components/Innerdsa/algorithmdsa/algo4.jsx'
@@ -85,10 +86,12 @@ import Recursion2 from './components/Innerdsa/recursiondsa/recursion2.jsx'
 import Recursion3 from './components/Innerdsa/recursiondsa/recursion3.jsx'
 import Recursion4 from './components/Innerdsa/recursiondsa/recursion4.jsx'
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layouts />}>
       <Route path='' element={<Home />} />
+      <Route path='Home2' element={<Home2 />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />

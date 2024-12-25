@@ -8,11 +8,11 @@ export default function Header() {
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center font-bold sm:text-2xl transition duration-500 hover:text-orange-500 hover:underline">
                         <img
-                            src= {'./ALL_ABOUT_CODING.png' } 
-                            className="mr-2 h-16 rounded-xl"
+                            src= {'./aac2.jpg' } 
+                            className="mr-2 h-16 rounded-2xl"
                             alt="Logo"
                         />
-                        ALL ABOUT CODING
+                        AllAboutCoding
                     </Link>
                     <div className="flex items-center lg:order-2">
                         <Link

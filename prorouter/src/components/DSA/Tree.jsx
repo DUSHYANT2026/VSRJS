@@ -5,8 +5,8 @@ function Tree() {
   return (
     <div className="mx-auto w-full max-w-7xl">
 
-<div className="sm:flex sm:items-center sm:justify-between">
-    <span className=" text-gray-900 sm:text-center font-bold hover:text-orange-500 hidden sm:block text-3xl hover:underline transition duration-500">
+<div className="sm:flex sm:items-center sm:justify-between bg-orange-600 text-white font-bold underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
+    <span className="text-gray-100 sm:text-center hidden sm:block text-3xl ">
         Tree(Binary Tree, Binary Search Tree And AVL)
     </span>
 </div>

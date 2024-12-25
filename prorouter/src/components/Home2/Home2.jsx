@@ -1,72 +1,108 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 
-function Dynamic() {
+function Home2() {
   return (
     <div className="mx-auto w-full max-w-7xl">
 
 <div className="sm:flex sm:items-center sm:justify-between bg-orange-600 text-white font-bold underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-3xl ">
-    Dynamic Programming
+        All The Important Topics of DSA
     </span>
 </div>
 
+<hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+  <NavLink to="/Arrays">
+  <div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
+    <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
+        Array, String, Matrix And Binary Search
+    </span>
+</div>
+  </NavLink>
 
 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-<NavLink to="/dynamic1">
+<NavLink to="/STL">
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
-     Dynamic Programming (1D) Notes with Questions
+        Standered Template Liberay (c++)
     </span>
 </div>
 </NavLink>
 
 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-<NavLink to="/dynamic2">
+<NavLink to="/Linkedlist">
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
-    Dynamic Programming (2D and 3D) or DP in Grides Notes with Questions
+        Linked-List
     </span>
 </div>
 </NavLink>
 
 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-<NavLink to="/dynamic3">
+<NavLink to="/Stack">
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
-       Dynamic Programming (Sequence & LIS) Notes with Questions
+        Stack, Queue And Priority-Queue(Heaps)
     </span>
 </div>
 </NavLink>
 
 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-<NavLink to="/dynamic4">
+<NavLink to="/Recusion">
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
-    Dynamic Programming (String) Notes with Questions
+        Recursion And Backtracking
     </span>
 </div>
 </NavLink>
 
 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-<NavLink to="/dynamic5">
+<NavLink to="/Dynamic">
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
-    Most Asked Leetcode Questions (Dynamic Programming)
+        Dynamic Programming
     </span>
 </div>
 </NavLink>
 
 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-<NavLink to="/dynamic6">
+<NavLink to="/Tree">
 <div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
     <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
-    Hard Questions Asked in Maang Companies 
+        Tree(Binary Tree, Binary Search Tree And AVL)
     </span>
 </div>
 </NavLink>
-    </div>
+
+<hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+<NavLink to="/Graph">
+<div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
+    <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
+        Graph(BFS, DFS, Shortest-Path)
+    </span>
+</div>
+</NavLink>
+
+<hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+<NavLink to="/Bitm">
+<div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
+    <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
+        Bit Manipulation And Maths
+    </span>
+</div>
+</NavLink>
+
+<hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+<NavLink to="/Algorithm">
+<div className="sm:flex sm:items-center sm:justify-between bg-blue-500 text-white font-bold  hover:bg-orange-600 transition duration-500 hover:underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
+    <span className="text-gray-100 sm:text-center hidden sm:block text-2xl">
+        Algorithms (Sliding Window, Two-Pointers, Sorting, Greedy)
+    </span>
+</div>
+</NavLink>
+
+        </div>
   )
 }
 
-export default Dynamic
+export default Home2
