@@ -5,23 +5,6 @@ export default function Home() {
     return (
         <div >
 
-            {/* <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-                <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
-                    <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-4xl font-bold sm:text-5xl transition duration-500 hover:text-orange-500 italic hover:underline">
-                            ALL ABOUT CODING
-                            <span className="hidden sm:block text-3xl">Data Structure Algorithm</span>
-                            <span className="hidden sm:block text-3xl">Development</span>
-                        </h2>
-
-                    </div>
-                </div>
-
-                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-100 h-96 rounded-2xl" src= {'./aac2.jpg' } alt="ALL ABOUT CODING" />
-                </div>
-            </aside> */}
-
 <aside class="relative overflow-hidden text-black rounded-xl sm:mx-20 mx-4 sm:py-24 py-16 shadow-2xl bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-300 hover:shadow-3xl transform hover:scale-105 transition duration-300">
   <div className="relative z-10 max-w-screen-xl px-8 pb-20 pt-12 sm:py-24 mx-auto sm:px-10 lg:px-12 flex flex-col sm:flex-row items-center sm:items-start">
     <div className="max-w-xl space-y-8 text-center sm:text-left sm:ml-auto sm:mr-12">
@@ -45,12 +28,7 @@ export default function Home() {
       <img className="w-full h-[32rem] object-cover rounded-2xl shadow-lg border-2 border-gray-300" src={'./aac2.jpg'} alt="ALL ABOUT CODING" />
     </div>
   </div>
-</aside>
-
-
-
-
-       
+</aside>    
 
 </div>
     );
