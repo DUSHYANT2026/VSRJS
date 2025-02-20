@@ -11,6 +11,7 @@ import User from './components/User/User.jsx'
 import Leetcode from './components/Leetcode/Leetcode.jsx'
 import Codolio from './components/Codolio/Codolio.jsx'
 import Github from './components/Github/Github.jsx'
+import Linkedin from './components/Linkedin/Linkedin.jsx'
 
 import Arrays from './components/DSA/Arrays.jsx'
 import Narray1 from './components/Innerdsa/arraydsa/Narray1.jsx'
@@ -98,6 +99,7 @@ const router = createBrowserRouter(
       <Route path='Leetcode' element={<Leetcode />} />
       <Route path='Codolio' element={<Codolio />} />
       <Route path='github' element={<Github />} /> 
+      <Route path='Linkedin' element={<Linkedin />} /> 
 
 
       <Route path='Arrays' element={<Arrays />} />
