@@ -44,7 +44,7 @@ function Github() {
 
     return (
         <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8">
-            {/* Input Section */}
+        
             <div className="bg-gray-800 bg-opacity-50 backdrop-blur-lg p-6 rounded-xl shadow-xl text-center w-full max-w-md">
                 <input
                     type="text"
@@ -61,11 +61,11 @@ function Github() {
                 </button>
             </div>
 
-            {/* Loading & Error Message */}
+      
             {loading && <p className="mt-4 text-lg animate-pulse">Loading...</p>}
             {error && <p className="mt-4 text-red-500">{error}</p>}
 
-            {/* Profile Display */}
+           
             {userData && (
                 <div className="mt-8 bg-gray-800 bg-opacity-50 backdrop-blur-lg p-6 rounded-xl shadow-xl text-center w-full max-w-md transition-all duration-300 hover:scale-105">
                     <a href={userData.html_url} className="hover:underline">
@@ -79,10 +79,20 @@ function Github() {
                     <p className="text-lg text-gray-300 mt-2">Followers: {userData.followers}</p>
                     <p className="text-lg text-gray-300 mt-2">Following: {userData.following}</p>
                     <p className="text-lg text-gray-300 mt-2">Public Repos: {userData.public_repos}</p>
+
+                
+                    <div className="mt-6">
+                        <h3 className="text-xl font-semibold mb-2">Commit Activity</h3>
+                        <img
+                            src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&hide_border=true&theme=dark&include_all_commits=true`}
+                            alt="GitHub Commit Graph"
+                            className="w-full rounded-lg"
+                        />
+                    </div>
                 </div>
             )}
 
-            {/* Repository List */}
+    
             {reposData.length > 0 && (
                 <div className="mt-8 w-full max-w-4xl">
                     <h2 className="text-3xl font-bold text-center mb-6">Repositories</h2>
