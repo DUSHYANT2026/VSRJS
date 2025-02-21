@@ -43,7 +43,7 @@ function Github() {
     };
 
     return (
-        <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8">
+        <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 rounded-2xl">
         
             <div className="bg-gray-800 bg-opacity-50 backdrop-blur-lg p-6 rounded-xl shadow-xl text-center w-full max-w-md">
                 <input

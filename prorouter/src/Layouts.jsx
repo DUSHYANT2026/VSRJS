@@ -7,7 +7,9 @@ function Layouts() {
   return (
     <>
     <Header/>
-    <Outlet />
+    <div className="mt-6 mb-6 px-1"> 
+        <Outlet />
+      </div>
     <Footer />
     </>
   )

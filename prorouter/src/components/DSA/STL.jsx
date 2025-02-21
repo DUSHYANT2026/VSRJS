@@ -4,13 +4,11 @@ import { NavLink } from 'react-router-dom';
 function STL() {
   return (
     <div className="mx-auto w-full max-w-7xl">
-      <div className="sm:flex sm:items-center sm:justify-between bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold underline rounded-lg px-2 py-6 cursor-pointer shadow-lg">
+      <div className="text-5xl font-extrabold text-center mb-12 text-gray-900 bg-gradient-to-r from-purple-600 to-green-500 p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-gray-300 cursor-pointer sm:flex sm:items-center sm:justify-center sm:gap-4">
         <span className="text-gray-100 sm:text-center hidden sm:block text-3xl">
           Standard Template Library (C++)
         </span>
       </div>
-
-      <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
 
       {/* Grid with 2 columns on large screens */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
