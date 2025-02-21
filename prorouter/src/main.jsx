@@ -87,6 +87,10 @@ import Recursion2 from './components/Innerdsa/recursiondsa/Recursion2.jsx'
 import Recursion3 from './components/Innerdsa/recursiondsa/Recursion3.jsx'
 import Recursion4 from './components/Innerdsa/recursiondsa/Recursion4.jsx'
 
+import Trie from './components/DSA/Trie.jsx'
+import Trie1 from './components/Innerdsa/Trie/Trie1.jsx'
+import Trie2 from './components/Innerdsa/Trie/Trie2.jsx'
+import Trie3 from './components/Innerdsa/Trie/Trie3.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -176,6 +180,10 @@ const router = createBrowserRouter(
       <Route path='Recursion3' element={<Recursion3 />} />
       <Route path='Recursion4' element={<Recursion4 />} />
   
+      <Route path='Trie' element={<Trie />} />
+      <Route path='Trie1' element={<Trie1 />} />
+      <Route path='Trie2' element={<Trie2 />} />
+      <Route path='Trie3' element={<Trie3 />} />
       
     </Route>     
   )

@@ -93,6 +93,15 @@ function Home2() {
             </span>
           </div>
         </NavLink>
+
+        <NavLink to="/Trie">
+          <div className="bg-gradient-to-r from-orange-500 to-red-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
+            <span className="text-white text-center text-2xl font-bold">
+              Trie (Implementation)
+            </span>
+          </div>
+        </NavLink>
+
       </div>
     </div>
   );
