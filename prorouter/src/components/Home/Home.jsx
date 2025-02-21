@@ -48,12 +48,12 @@ export default function Home() {
 
             {/* DSA Topics Grid */}
             <div className="mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
-                    Topics We Cover
+                <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 bg-gradient-to-r from-pink-500 to-red-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
+                All The Important Topics of DSA
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Array, String, Matrix, Binary Search */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/Arrays" className="block">
                         <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Array, String, Matrix</h3>
                             <p className="text-gray-100">
@@ -63,7 +63,7 @@ export default function Home() {
                     </NavLink>
 
                     {/* Standard Template Library (C++) */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/STL" className="block">
                         <div className="bg-gradient-to-r from-green-500 to-teal-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Standard Template Library</h3>
                             <p className="text-gray-100">
@@ -73,7 +73,7 @@ export default function Home() {
                     </NavLink>
 
                     {/* Linked List */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/Linkedlist" className="block">
                         <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Linked List</h3>
                             <p className="text-gray-100">
@@ -83,7 +83,7 @@ export default function Home() {
                     </NavLink>
 
                     {/* Stack, Queue, Priority Queue (Heaps) */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/Stack" className="block">
                         <div className="bg-gradient-to-r from-pink-500 to-red-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Stack, Queue, Heaps</h3>
                             <p className="text-gray-100">
@@ -93,7 +93,7 @@ export default function Home() {
                     </NavLink>
 
                     {/* Recursion & Backtracking */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/Recusion" className="block">
                         <div className="bg-gradient-to-r from-purple-500 to-indigo-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Recursion & Backtracking</h3>
                             <p className="text-gray-100">
@@ -103,7 +103,7 @@ export default function Home() {
                     </NavLink>
 
                     {/* Dynamic Programming */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/Dynamic" className="block">
                         <div className="bg-gradient-to-r from-teal-500 to-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Dynamic Programming</h3>
                             <p className="text-gray-100">
@@ -113,7 +113,7 @@ export default function Home() {
                     </NavLink>
 
                     {/* Tree (Binary Tree, BST, AVL) */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/Tree" className="block">
                         <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Tree (Binary Tree, BST, AVL)</h3>
                             <p className="text-gray-100">
@@ -123,7 +123,7 @@ export default function Home() {
                     </NavLink>
 
                     {/* Graph (BFS, DFS, Shortest Path) */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/Graph" className="block">
                         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Graph (BFS, DFS, Paths)</h3>
                             <p className="text-gray-100">
@@ -133,7 +133,7 @@ export default function Home() {
                     </NavLink>
 
                     {/* Bit Manipulation & Maths */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/Bitm" className="block">
                         <div className="bg-gradient-to-r from-green-600 to-teal-600 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Bit Manipulation & Maths</h3>
                             <p className="text-gray-100">
@@ -143,7 +143,7 @@ export default function Home() {
                     </NavLink>
 
                     {/* Algorithms (Sliding Window, Two Pointers, Sorting, Greedy) */}
-                    <NavLink to="./Home2" className="block">
+                    <NavLink to="/Algorithm" className="block">
                         <div className="bg-gradient-to-r from-pink-600 to-purple-600 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 cursor-pointer">
                             <h3 className="text-2xl font-bold text-white mb-4">Algorithms</h3>
                             <p className="text-gray-100">
