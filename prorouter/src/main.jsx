@@ -12,6 +12,7 @@ import Leetcode from './components/Leetcode/Leetcode.jsx'
 import Codolio from './components/Codolio/Codolio.jsx'
 import Github from './components/Github/Github.jsx'
 import Linkedin from './components/Linkedin/Linkedin.jsx'
+import AIML from './components/ML/AIML.jsx'
 
 import Arrays from './components/DSA/Arrays.jsx'
 import Narray1 from './components/Innerdsa/arraydsa/Narray1.jsx'
@@ -92,6 +93,48 @@ import Trie1 from './components/Innerdsa/Trie/Trie1.jsx'
 import Trie2 from './components/Innerdsa/Trie/Trie2.jsx'
 import Trie3 from './components/Innerdsa/Trie/Trie3.jsx'
 
+import Foundation from './components/ML2/Foundation.jsx';
+import BasicDeployment from './components/ML2/BasicDeployment.jsx';
+import DataPreprocessing from './components/ML2/DataPreprocessing.jsx';
+import MachineLearning from './components/ML2/MachineLearning.jsx';
+import ModelEvaluation from './components/ML2/ModelEvaluation.jsx';
+import UnsupervisedLearning from './components/ML2/UnsupervisedLearning.jsx';
+import SupervisedLearning from './components/ML2/SupervisedLearning.jsx';
+import ReinforcementLearning from './components/ML2/ReinforcementLearning.jsx';
+import AdvancedML from './components/ML2/AdvancedML.jsx';
+
+import AIvsMLvsDL from './components/ML3/AIvsMLvsDL.jsx'
+import AnomalyDetection from './components/ML3/AnomalyDetection.jsx'
+import BasicsOfRL from './components/ML3/BasicsOfRL.jsx'
+import BiasVarianceTradeoff from './components/ML3/BiasVarianceTradeoff.jsx'
+import Calculus from './components/ML3/Calculus.jsx'
+import Classification from './components/ML3/Classification.jsx'
+import Clustering from './components/ML3/Clustering.jsx'
+import DataCleaning from './components/ML3/DataCleaning.jsx'
+import DataTransformation from './components/ML3/DataTransformation.jsx'
+import DimensionalityReduction from './components/ML3/DimensionalityReduction.jsx'
+import DQN from './components/ML3/DQN.jsx'
+import EnsembleLearning from './components/ML3/EnsembleLearning.jsx'
+import EvaluationMetrics from './components/ML3/EvaluationMetrics.jsx'
+import FeatureEngineering from './components/ML3/FeatureEngineering.jsx'
+import HistoryML from './components/ML3/HistoryML.jsx'
+import HyperparameterTuning from './components/ML3/HyperparameterTuning.jsx'
+import LinearAlgebra from './components/ML3/LinearAlgebra.jsx'
+import MDP from './components/ML3/MDP.jsx'
+import MLPipeline from './components/ML3/MLPipeline.jsx'
+import NeuralNetworks from './components/ML3/NeuralNetworks.jsx'
+import PolicyGradientMethods from './components/ML3/PolicyGradientMethods.jsx'
+import Probability from './components/ML3/Probability.jsx'
+import Python from './components/ML3/Python.jsx'
+import QLearning from './components/ML3/QLearning.jsx'
+import Regression from './components/ML3/Regression.jsx'
+import RegularizationBasics from './components/ML3/RegularizationBasics.jsx'
+import RLGamingRobotics from './components/ML3/RLGamingRobotics.jsx'
+import SplittingData from './components/ML3/SplittingData.jsx'
+import TimeSeriesForecasting from './components/ML3/TimeSeriesForecasting.jsx'
+
+
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layouts />}>
@@ -104,6 +147,7 @@ const router = createBrowserRouter(
       <Route path='Codolio' element={<Codolio />} />
       <Route path='github' element={<Github />} /> 
       <Route path='Linkedin' element={<Linkedin />} /> 
+      <Route path='AIML' element={<AIML />} /> 
 
 
       <Route path='Arrays' element={<Arrays />} />
@@ -184,7 +228,48 @@ const router = createBrowserRouter(
       <Route path='Trie1' element={<Trie1 />} />
       <Route path='Trie2' element={<Trie2 />} />
       <Route path='Trie3' element={<Trie3 />} />
+
+      <Route path='AIML' element={<AIML />} />
+      <Route path='BasicDeployment' element={<BasicDeployment />} />
+      <Route path='DataPreprocessing' element={<DataPreprocessing />} />
+      <Route path='Foundation' element={<Foundation />} />
+      <Route path='MachineLearning' element={<MachineLearning />} />
+      <Route path='ModelEvaluation' element={<ModelEvaluation />} />
+      <Route path='UnsupervisedLearning' element={<UnsupervisedLearning />} />
+      <Route path='SupervisedLearning' element={<SupervisedLearning />} />
+      <Route path='ReinforcementLearning' element={<ReinforcementLearning />} />
+      <Route path='AdvancedML' element={<AdvancedML />} />
       
+      <Route path='AIvsMLvsDL' element={<AIvsMLvsDL />} />
+      <Route path='AnomalyDetection' element={<AnomalyDetection />} />
+      <Route path='BasicsOfRL' element={<BasicsOfRL />} />
+      <Route path='BiasVarianceTradeoff' element={<BiasVarianceTradeoff />} />
+      <Route path='Calculus' element={<Calculus />} />
+      <Route path='Classification' element={<Classification />} />
+      <Route path='Clustering' element={<Clustering />} />
+      <Route path='DataCleaning' element={<DataCleaning />} />
+      <Route path='DataTransformation' element={<DataTransformation />} />
+      <Route path='DimensionalityReduction' element={<DimensionalityReduction />} />
+      <Route path='DQN' element={<DQN />} />
+      <Route path='EnsembleLearning' element={<EnsembleLearning />} />
+      <Route path='EvaluationMetrics' element={<EvaluationMetrics />} />
+      <Route path='FeatureEngineering' element={<FeatureEngineering />} />
+      <Route path='HistoryML' element={<HistoryML />} />
+      <Route path='HyperparameterTuning' element={<HyperparameterTuning />} />
+      <Route path='LinearAlgebra' element={<LinearAlgebra />} />
+      <Route path='MDP' element={<MDP />} />
+      <Route path='MLPipeline' element={<MLPipeline />} />
+      <Route path='NeuralNetworks' element={<NeuralNetworks />} />
+      <Route path='PolicyGradientMethods' element={<PolicyGradientMethods />} />
+      <Route path='Probability' element={<Probability />} />
+      <Route path='Python' element={<Python />} />
+      <Route path='QLearning' element={<QLearning />} />
+      <Route path='Regression' element={<Regression />} />
+      <Route path='RegularizationBasics' element={<RegularizationBasics />} />
+      <Route path='RLGamingRobotics' element={<RLGamingRobotics />} />
+      <Route path='SplittingData' element={<SplittingData />} />
+      <Route path='TimeSeriesForecasting' element={<TimeSeriesForecasting />} />
+
     </Route>     
   )
 )

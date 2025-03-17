@@ -3,17 +3,23 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Dushyant2026.github.io/WEB-DSA",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "docx": "^9.2.0",
     "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
     "express": "^4.21.2",
     "node-fetch": "^3.3.2",
+    "puppeteer": "^24.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
@@ -30,6 +36,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
+    "gh-pages": "^6.3.0",
     "globals": "^15.11.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",

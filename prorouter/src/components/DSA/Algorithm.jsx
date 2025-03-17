@@ -10,7 +10,6 @@ function Algorithm() {
         </span>
       </div>
 
-      <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
 
       {/* Grid with 2 columns on large screens */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
