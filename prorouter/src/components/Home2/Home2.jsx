@@ -1,197 +1,155 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 import { useTheme } from "../../ThemeContext.jsx";
 
 function Home2() {
   const { darkMode } = useTheme();
+
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  // Category data to make the code more maintainable
+  const categories = [
+    {
+      path: "/Arrays",
+      title: "Array, String, Matrix",
+      gradient: "from-blue-600 to-purple-600",
+      lightGradient: "from-blue-500 to-purple-500",
+    },
+    {
+      path: "/STL",
+      title: "Standard Template Library",
+      gradient: "from-green-600 to-teal-600",
+      lightGradient: "from-green-500 to-teal-500",
+    },
+    {
+      path: "/Linkedlist",
+      title: "Linked List",
+      gradient: "from-yellow-600 to-orange-600",
+      lightGradient: "from-yellow-500 to-orange-500",
+    },
+    {
+      path: "/Stack",
+      title: "Stack, Queue & Heaps",
+      gradient: "from-pink-600 to-red-600",
+      lightGradient: "from-pink-500 to-red-500",
+    },
+    {
+      path: "/Recusion",
+      title: "Recursion & Backtracking",
+      gradient: "from-indigo-600 to-blue-600",
+      lightGradient: "from-indigo-500 to-blue-500",
+    },
+    {
+      path: "/Dynamic",
+      title: "Dynamic Programming",
+      gradient: "from-purple-600 to-pink-600",
+      lightGradient: "from-purple-500 to-pink-500",
+    },
+    {
+      path: "/Tree",
+      title: "Trees (Binary, BST, AVL)",
+      gradient: "from-teal-600 to-green-600",
+      lightGradient: "from-teal-500 to-green-500",
+    },
+    {
+      path: "/Graph",
+      title: "Graph Algorithms",
+      gradient: "from-red-600 to-yellow-600",
+      lightGradient: "from-red-500 to-yellow-500",
+    },
+    {
+      path: "/Bitm",
+      title: "Bit Manipulation & Maths",
+      gradient: "from-blue-600 to-indigo-600",
+      lightGradient: "from-blue-500 to-indigo-500",
+    },
+    {
+      path: "/Algorithm",
+      title: "All Algorithms",
+      gradient: "from-orange-600 to-red-600",
+      lightGradient: "from-orange-500 to-red-500",
+    },
+    {
+      path: "/Trie",
+      title: "Trie Data Structure",
+      gradient: "from-pink-600 to-orange-600",
+      lightGradient: "from-pink-500 to-orange-500",
+    },
+  ];
+
   return (
-    <div className={`min-h-screen ${darkMode ? "bg-zinc-900 text-gray-100" : "bg-white text-gray-900"}`}>
-      <div className="mx-auto w-full max-w-7xl p-4">
-        {/* Header Section */}
-        <div
-          className={`text-5xl font-extrabold text-center mb-12 p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border ${
+    <div
+      className={`min-h-screen ${
+        darkMode ? "bg-zinc-900 text-gray-100" : "bg-gray-50 text-gray-900"
+      }`}
+    >
+      <div className="mx-auto w-full max-w-5xl px-4 py-8 md:py-12">
+        {/* Header Section with improved accessibility and animation */}
+        <header
+          className={`relative overflow-hidden text-center mb-10 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border ${
             darkMode
-              ? "bg-gradient-to-r from-gray-800 to-gray-900 border-gray-700 text-gray-300"
-              : "bg-gradient-to-r from-orange-500 to-pink-500 border-gray-200 text-white"
+              ? "bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700"
+              : "bg-gradient-to-br from-indigo-600 to-purple-600 border-gray-200"
           }`}
         >
-        <span className="sm:text-center hidden sm:block text-3xl">
-          All The Important Topics of DSA
-        </span>
+          <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
+            DSA Topics Explorer
+          </h1>
+          <p className="text-lg md:text-xl font-medium text-gray-200 max-w-xl mx-auto">
+            Master all essential data structures and algorithms
+          </p>
+        </header>
+
+        {/* Grid Section with improved cards - removed beginner/intermediate labels */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {categories.map((category, index) => (
+            <NavLink
+              to={category.path}
+              onClick={scrollToTop}
+              key={index}
+              className="group"
+            >
+              <div
+                className={`p-5 rounded-lg shadow-md group-hover:shadow-lg transform transition duration-300 group-hover:translate-y-[-3px] border h-full flex flex-col justify-between ${
+                  darkMode
+                    ? `bg-gradient-to-br ${category.gradient} border-gray-700`
+                    : `bg-gradient-to-br ${category.lightGradient} border-gray-200`
+                }`}
+              >
+                <div className="mb-3">
+                  <h3 className="text-white text-lg font-bold mb-1">
+                    {category.title}
+                  </h3>
+                  <p className="text-gray-100 text-xs opacity-80">
+                    Explore core concepts and practice problems
+                  </p>
+                </div>
+                <div className="flex justify-end items-center">
+                  <div className="bg-white bg-opacity-20 p-1 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </NavLink>
+          ))}
+        </div>
       </div>
-
-      {/* Grid Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Array, String, Matrix */}
-        <NavLink to="/Arrays" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-blue-600 to-purple-600 border-gray-600"
-                : "bg-gradient-to-r from-blue-500 to-purple-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Array, String, Matrix
-            </span>
-          </div>
-        </NavLink>
-
-        {/* Standard Template Library */}
-        <NavLink to="/STL" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-green-600 to-teal-600 border-gray-600"
-                : "bg-gradient-to-r from-green-500 to-teal-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Standard Template Library
-            </span>
-          </div>
-        </NavLink>
-
-        {/* Linked List */}
-        <NavLink to="/Linkedlist" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-yellow-600 to-orange-600 border-gray-600"
-                : "bg-gradient-to-r from-yellow-500 to-orange-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Linked-List
-            </span>
-          </div>
-        </NavLink>
-
-        {/* Stack, Queue, Heaps */}
-        <NavLink to="/Stack" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-pink-600 to-red-600 border-gray-600"
-                : "bg-gradient-to-r from-pink-500 to-red-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Stack, Queue And Heaps
-            </span>
-          </div>
-        </NavLink>
-
-        {/* Recursion & Backtracking */}
-        <NavLink to="/Recusion" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-indigo-600 to-blue-600 border-gray-600"
-                : "bg-gradient-to-r from-indigo-500 to-blue-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Recursion And Backtracking
-            </span>
-          </div>
-        </NavLink>
-
-        {/* Dynamic Programming */}
-        <NavLink to="/Dynamic" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-purple-600 to-pink-600 border-gray-600"
-                : "bg-gradient-to-r from-purple-500 to-pink-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Dynamic Programming
-            </span>
-          </div>
-        </NavLink>
-
-        {/* Tree (Binary Tree, BST, AVL) */}
-        <NavLink to="/Tree" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-teal-600 to-green-600 border-gray-600"
-                : "bg-gradient-to-r from-teal-500 to-green-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Tree (Binary Tree, BST And AVL)
-            </span>
-          </div>
-        </NavLink>
-
-        {/* Graph (BFS, DFS, Shortest Path) */}
-        <NavLink to="/Graph" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-red-600 to-yellow-600 border-gray-600"
-                : "bg-gradient-to-r from-red-500 to-yellow-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Graph (BFS, DFS, Shortest-Path)
-            </span>
-          </div>
-        </NavLink>
-
-        {/* Bit Manipulation & Maths */}
-        <NavLink to="/Bitm" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-blue-600 to-indigo-600 border-gray-600"
-                : "bg-gradient-to-r from-blue-500 to-indigo-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Bit Manipulation And Maths
-            </span>
-          </div>
-        </NavLink>
-
-        {/* All Algorithms */}
-        <NavLink to="/Algorithm" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-orange-600 to-red-600 border-gray-600"
-                : "bg-gradient-to-r from-orange-500 to-red-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              All Algorithms
-            </span>
-          </div>
-        </NavLink>
-
-        {/* Trie Implementation */}
-        <NavLink to="/Trie" onClick={scrollToTop}>
-          <div
-            className={`p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border ${
-              darkMode
-                ? "bg-gradient-to-r from-pink-600 to-orange-600 border-gray-600"
-                : "bg-gradient-to-r from-orange-500 to-pink-500 border-gray-200"
-            }`}
-          >
-            <span className="text-white text-center text-2xl font-bold">
-              Trie (Implementation)
-            </span>
-          </div>
-        </NavLink>
-      </div>
-    </div>
     </div>
   );
 }

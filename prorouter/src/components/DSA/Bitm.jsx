@@ -1,16 +1,14 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Bitm() {
   return (
     <div className="mx-auto w-full max-w-7xl">
-      <div className="text-5xl font-extrabold text-center mb-12 text-gray-900 bg-gradient-to-r from-blue-500 to-pink-500 p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-gray-300 cursor-pointer sm:flex sm:items-center sm:justify-center sm:gap-4">
-        <span className="text-gray-100 sm:text-center hidden sm:block text-3xl">
+      <div className="text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-blue-500 to-pink-500 p-4 sm:p-6 rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-gray-300 cursor-pointer">
+        <span className="text-white text-2xl sm:text-3xl">
           Bit Manipulation And Maths
         </span>
       </div>
-
-    
 
       {/* Single Column Layout */}
       <div className="space-y-6">

@@ -13,6 +13,7 @@ import Codolio from './components/Codolio/Codolio.jsx'
 import Github from './components/Github/Github.jsx'
 import Linkedin from './components/Linkedin/Linkedin.jsx'
 import AIML from './components/ML/AIML.jsx'
+import Login from './components/Login/Login.jsx'
 
 import Arrays from './components/DSA/Arrays.jsx'
 import Narray1 from './components/Innerdsa/arraydsa/Narray1.jsx'
@@ -132,6 +133,12 @@ import RegularizationBasics from './components/ML3/RegularizationBasics.jsx'
 import RLGamingRobotics from './components/ML3/RLGamingRobotics.jsx'
 import SplittingData from './components/ML3/SplittingData.jsx'
 import TimeSeriesForecasting from './components/ML3/TimeSeriesForecasting.jsx'
+import CICD from './components/ML3/CICD.jsx'
+import CloudDeployment from './components/ML3/CloudDeployment.jsx'
+import DockerDeployment from './components/ML3/DockerDeployment.jsx'
+import FlaskFastAPI from './components/ML3/FlaskFastAPI.jsx'
+import RESTAPI from './components/ML3/RESTAPI.jsx'
+import SavingModels from './components/ML3/SavingModels.jsx'
 
 
 
@@ -148,6 +155,7 @@ const router = createBrowserRouter(
       <Route path='github' element={<Github />} /> 
       <Route path='Linkedin' element={<Linkedin />} /> 
       <Route path='AIML' element={<AIML />} /> 
+      <Route path='Login' element={<Login />} /> 
 
 
       <Route path='Arrays' element={<Arrays />} />
@@ -269,6 +277,12 @@ const router = createBrowserRouter(
       <Route path='RLGamingRobotics' element={<RLGamingRobotics />} />
       <Route path='SplittingData' element={<SplittingData />} />
       <Route path='TimeSeriesForecasting' element={<TimeSeriesForecasting />} />
+      <Route path='CICD' element={<CICD />} />
+      <Route path='CloudDeployment' element={<CloudDeployment />} />
+      <Route path='DockerDeployment' element={<DockerDeployment />} />
+      <Route path='FlaskFastAPI' element={<FlaskFastAPI />} />
+      <Route path='RESTAPI' element={<RESTAPI />} />
+      <Route path='SavingModels' element={<SavingModels />} />
 
     </Route>     
   )

@@ -17,11 +17,13 @@ function LayoutContent() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className={darkMode ? "bg-zinc-900 text-gray-300" : "bg-gray-50 text-black"}>
-        <Header />
-        <div className="mt-6 mb-6 px-1 ">
+      <div className={`min-h-screen flex flex-col transition-colors duration-300 ${
+        darkMode ? "bg-zinc-900 text-gray-300" : "bg-gray-50 text-black"
+      }`}>
+        <Header/>
+        <main className="flex-grow mt-10 max-w-7xl mx-auto w-[95%]">
           <Outlet />
-        </div>
+        </main>
         <Footer />
       </div>
     </div>

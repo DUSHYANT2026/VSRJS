@@ -5,12 +5,13 @@
   "type": "module",
   "homepage": "https://Dushyant2026.github.io/WEB-DSA",
   "scripts": {
+    "clean": "rm -rf build dist",
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
+    "build": "npm run clean && vite build",
+    "lint": "eslint . --fix",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -18,10 +19,12 @@
     "dotenv": "^16.4.7",
     "exceljs": "^4.4.0",
     "express": "^4.21.2",
+    "lucide-react": "^0.487.0",
     "node-fetch": "^3.3.2",
     "puppeteer": "^24.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-feather": "^2.0.10",
     "react-router-dom": "^6.28.0",
     "react-syntax-highlighter": "^15.6.1",
     "recharts": "^2.15.1"
@@ -32,14 +35,14 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.13.0",
-    "eslint-plugin-react": "^7.37.2",
+    "eslint": "^9.23.0",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "gh-pages": "^6.3.0",
     "globals": "^15.11.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
-    "vite": "^5.4.10"
+    "vite": "^6.2.3"
   }
 }

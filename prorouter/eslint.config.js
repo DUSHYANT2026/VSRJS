@@ -23,16 +23,23 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
-    rules: {
-      ...js.configs.recommended.rules,
-      ...react.configs.recommended.rules,
-      ...react.configs['jsx-runtime'].rules,
-      ...reactHooks.configs.recommended.rules,
-      'react/jsx-no-target-blank': 'off',
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
+    "env": {
+      "browser": true,
+      "es2021": true
     },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-unused-vars": ["warn", { "vars": "all", "varsIgnorePattern": "^_" }],
+      "react/prop-types": "off", // Disable prop-types validation if not needed
+      "react/display-name": "off" ,
+      "react/darkMode" : "off"
+    }
   },
 ]
